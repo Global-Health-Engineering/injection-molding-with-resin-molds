@@ -1,8 +1,6 @@
-![Hero Image](img/pictorial.png)
-
 # Resin Molds for Recycled Plastic Injection Molding Research at ETH Zürich
 
-# Resin Molds and Plastic Shredder System Research at ETH Zürich
+![Hero Image](img/pictorial.png)
 
 ## Introduction
 This research project explores the use of resin molds for recycled plastic injection molding, building on the work of Precious Plastics and previous ETH Zürich projects. The goal was to develop practical guidelines for designing and manufacturing resin molds that can be used with recycled plastics like PP (polypropylene) and HDPE (high-density polyethylene) in small-scale recycling operations using the Holimaker Holipress Desktop Injection Moulding Machine.
@@ -41,7 +39,7 @@ This research project explores the use of resin molds for recycled plastic injec
 </div>
 
 <p style="text-align: center; font-size: 0.9em; color: #666;">
-  From left: CAD design, prototype testing phase, final installed motor linkage system
+  From left: components, assembly, linkage attached to shredder
 </p>
 
 ## Small-Scale Injection Molding Background Research
@@ -95,7 +93,7 @@ Experimentation with:
 
 ## Results and Key Learnings
 
-![molded-pieces-1](img/molded-pieces1.jpg)
+![molded-pieces-1](img/molded-pieces-1.jpg)
 ### Successful Outcomes
 1. Functional PP molding achieved (5/15)
    - Proper venting and temperature control were critical

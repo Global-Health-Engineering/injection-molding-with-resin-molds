@@ -1,6 +1,11 @@
 ![Hero Image](img/pictorial.png)
 
+# Resin Molds for Recycled Plastic Injection Molding Research at ETH Zürich
+
 # Resin Molds and Plastic Shredder System Research at ETH Zürich
+
+## Introduction
+This research project explores the use of resin molds for recycled plastic injection molding, building on the work of Precious Plastics and previous ETH Zürich projects. The goal was to develop practical guidelines for designing and manufacturing resin molds that can be used with recycled plastics like PP (polypropylene) and HDPE (high-density polyethylene) in small-scale recycling operations using the Holimaker Holipress Desktop Injection Moulding Machine.
 
 ## Motorized Shredder Linkage System
 **Key Achievement:** Designed and implemented a motor linkage system that increased shredding capacity from 1 to 20 bottle caps per minute, eliminating manual labor.
@@ -27,17 +32,19 @@
    - Cost-effective solution via JLC PCB ($91.09)
    - Perfect fit and reliable operation confirmed (5/15)
 
-## Introduction to Resin Molding Research
-This secondary research project explores...
+### Shredder Linkage Development Photos
 
-[Rest of the original content follows exactly as before from "## Introduction to Resin Molding Research" through to the end of the Appendix table]
+<div style="display: flex; justify-content: space-between; margin: 20px 0;">
+  <img src="img/shredder-motor-linkage-1.jpg" alt="Linkage Design CAD" style="width: 32%;">
+  <img src="img/shredder-motor-linkage-2.jpg" alt="Prototype Testing" style="width: 32%;">
+  <img src="img/shredder-motor-linkage-3.jpg" alt="Final Installed System" style="width: 32%;">
+</div>
 
-# Resin Molds for Recycled Plastic Injection Molding Research at ETH Zürich
+<p style="text-align: center; font-size: 0.9em; color: #666;">
+  From left: CAD design, prototype testing phase, final installed motor linkage system
+</p>
 
-## Introduction
-This research project explores the use of resin molds for recycled plastic injection molding, building on the work of Precious Plastics and previous ETH Zürich projects. The goal was to develop practical guidelines for designing and manufacturing resin molds that can be used with recycled plastics like PP (polypropylene) and HDPE (high-density polyethylene) in small-scale recycling operations.
-
-## Background Research
+## Small-Scale Injection Molding Background Research
 Key resources informed our work:
 - Precious Plastics community guidelines on injection molding and mold design
 - Industrial design standards from RapidDirect and Fictiv injection molding guides
@@ -88,6 +95,7 @@ Experimentation with:
 
 ## Results and Key Learnings
 
+![molded-pieces-1](img/molded-pieces1.jpg)
 ### Successful Outcomes
 1. Functional PP molding achieved (5/15)
    - Proper venting and temperature control were critical

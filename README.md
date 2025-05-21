@@ -58,6 +58,9 @@ Critical design considerations are identified in the Pictorial on top of the pag
 
 ## Progress and Methodology
 
+![molded-pieces-1](img/molded-pieces-1.jpg)
+*black and red: HDPE | white: PP*
+
 ### Phase 1: Gaugey: Design Rule Test Piece
 Developed Gaugey, comprehensive test piece aiming to push the limits of the Holipress machine and resin molds incorporating:
 - **Boss** for threaded insert
@@ -99,8 +102,6 @@ Experimentation with:
 
 ## Results and Key Learnings
 
-![molded-pieces-1](img/molded-pieces-1.jpg)
-*black and red: HDPE | white: PP*
 ### Successful Outcomes
 1. Functional PP molding achieved (5/15)
    - Proper venting and temperature control were critical

@@ -1,11 +1,18 @@
-# Resin Molds for Recycled Plastic Injection Molding Research at ETH Zürich
+
+# Resin Molds for Recycled Plastic Injection Molding Research at Global Health Engineering ETH Zürich
 
 ![Hero Image](img/pictorial.png)
+Gaugey is design rule test piece inspired by Benchy (3D printing) but for injection molding using resin molds.
 
 ## Introduction
+**Injection molding typically serves mass production—millions of parts from costly metal molds—but what if you need just 100 precision, mechanically robust components in resource-constrained settings?** To what extent can self-made resin molds bridge this gap, enabling DIY production of high-fidelity plastic parts without industrial infrastructure?
+
 This research project explores the use of resin molds for recycled plastic injection molding, building on the work of Precious Plastics and previous ETH Zürich projects. The goal was to develop practical guidelines for designing and manufacturing resin molds that can be used with recycled plastics like PP (polypropylene) and HDPE (high-density polyethylene) in small-scale recycling operations using the Holimaker Holipress Desktop Injection Moulding Machine.
 
 ## Motorized Shredder Linkage System
+**From Manual Labor to Automated Recycling**  
+The research begins with a practical challenge: the lab’s Holimaker Holishred manual shredder requires intensive effort to process just 1 bottle cap per minute. To enable scalable recycling of HDPE caps—that can be used for molding instead of buying PP pellets online—I engineered a motorized linkage system that transforms this slow, labor-intensive process into an automated workflow.
+
 **Key Achievement:** Designed and implemented a motor linkage system that increased shredding capacity from 1 to 20 bottle caps per minute, eliminating manual labor.
 
 ![Shredder Motor Linkage](img/shredder-motor-linkage-5.jpg)
@@ -22,8 +29,7 @@ This research project explores the use of resin molds for recycled plastic injec
 
 3. **Implementation**:
    - Successfully machined and installed (5/8)
-   - Wooden stand built to specifications (89.33mm diameter, 13.3cm height)
-   - Optimal operation at 100 power, 0.5 speed settings
+   - Wooden stand laser cut to hold the motor
 
 4. **Results**:
    - 20x capacity improvement
@@ -43,83 +49,93 @@ This research project explores the use of resin molds for recycled plastic injec
 </p>
 
 ## Small-Scale Injection Molding Background Research
-Key resources informed our work:
+Key resources informed the work:
 - Precious Plastics community guidelines on injection molding and mold design
 - Industrial design standards from RapidDirect and Fictiv injection molding guides
 - Previous ETH work by Lorenzo on HDPE molding challenges
 
-Critical design considerations identified:
-
-1. **Material Properties**: PP (230-270°C ideal) vs HDPE (higher temps, harder to glue)
-2. **Wall Thickness**: Generally 1.2-3mm (PP: 1.02-3.81mm)
-3. **Draft Angles**: Minimum 1.5-2° (up to 5° for textured surfaces)
-4. **Ribs & Bosses**: Base thickness ≤2/3 adjoining wall, height ≤2.5x wall thickness
-5. **Venting**: Critical for successful molding (0.05mm depth, 0.5-1.0mm width)
+Critical design considerations are identified in the Pictorial on top of the page.
 
 ## Progress and Methodology
 
-### Phase 1: Design Rule Test Piece
-Developed a comprehensive test piece incorporating:
-- Various wall thicknesses
-- Ribs and bosses
-- Undercuts
-- Different draft angles
-- Text features of varying sizes
-- Venting configurations
+### Phase 1: Gaugey: Design Rule Test Piece
+Developed Gaugey, comprehensive test piece aiming to push the limits of the Holipress machine and resin molds incorporating:
+- **Boss** for threaded insert
+- **Coring** to control wall thickness and reduce material waste
+- **Draft angles** to show how easy part can be removed
+- **Font size** to see what is legible
+- **Gate** as the entry point for plastic
+- **Parting line** where the two halves meet
+- **Radius** calculation for round corners that improve moldability and reduce stress
+- **Ribs and sink** that distribute stress and support structure
+- **Undercut** can be avoided by orienting features parallel to draw line and cutting a hole following the projection of the undercut
+- **Shrinkage** to compare intended dimensions to actual
+- **Stiftness** to gauge material
+- **Wall thickness** that depends on material
+- **Venting configurations** to relieve pressure
 
-Key iterations:
-- Initial design proved difficult to manufacture due to slot complexity (3/11)
-- Simplified to C-shape extrusion with disk clamp (4/10)
-- Added more ribs and uniform wall thickness (3/31)
 
 ### Phase 2: Mold Development
 Experimentation with:
 
 1. **Resin Molds**:
-   - Learned shrinkage characteristics (60mm → 60.5mm → 60.3mm)
-   - Adjusted dimensions by 0.4mm to compensate
+   - First tested with grey resin (did not mold well) and then rigid 10k (all printed on FormLabs Form 3+)
+   - Learned resin expansion characteristics (60mm → 60.5mm after warming → 60.3mm after cooling )
+   - Reduced dimensions by 0.4mm to compensate and sand off support touchpoints
    - Strengthened undercut walls
    - Optimized venting (increased from 0.05mm to 0.1mm depth)
 
 2. **Injection Parameters**:
-   - Temperature optimization (PP worked best at 240°C vs 230°C)
-   - Cooling time ≈20 seconds
-   - Pressure requirements
+   - Temperature optimization
+	   -  PP worked best at 230°C
+	   -  HDPE worked best at 270°C
+   - Cooling time ≈ 1 minute
+   - Heating the resin with a heat gun improved plastic flow
 
 ### Phase 3: Material Testing
 - PP: Successful molding after vent adjustments
-- HDPE: Challenging - required new mold design due to snapping thin walls
+- HDPE: Challenging - the plastic flowed harder through 
 - Learned heat management is crucial for different materials
 
 ## Results and Key Learnings
 
 ![molded-pieces-1](img/molded-pieces-1.jpg)
+*black and red: HDPE | white: PP*
 ### Successful Outcomes
 1. Functional PP molding achieved (5/15)
    - Proper venting and temperature control were critical
-   - Final shrinkage adjustment: -0.4mm on all dimensions
-2. Developed design guidelines (Appendix)
+   - Final shrinkage adjustment: 1.6% shrinkage in length and width 
+   - Height showed greater variance: +12.4% probably because the mold could have been clamped tighter
+2. Developed design guidelines (see Pictorial)
 3. Motor installation for shredder successfully completed via JLC PCB order
+
+<div style="display: flex; justify-content: space-between; margin: 20px 0;">
+  <img src="img/molded-pieces-3.jpg" alt="Linkage Design CAD" style="width: 49%;">
+  <img src="img/molded-pieces-4.jpg" alt="Prototype Testing" style="width: 49%;">
+</div>
 
 ### Key Findings
 
 1. **Design Rules**:
-   - Venting is paramount: 4 primary vents along 100mm parting line + 2 secondary vents
-   - Gate design: Depth = 50% wall thickness for PP, width = 2x depth
-   - Wall thickness consistency prevents warping and sink marks
+   - Venting is paramount: 4 primary vents along 100mm parting line + 2 secondary vents + 1 bigger drain hole at the opposite side of the gate (same dimension) if vent is not enough
+   - Undercut flanges in resin molds are fragile:
+     - With two cantilevers in the design, strengthening one weakens the other. In resin or plastic, both will likely break off because neither can handle the stress, so undercuts work best with metal molds
+   - White PP shows poor detail visibility vs red HDPE
    - R2 = R1 + t for proper corner radii
 
 2. **Process Parameters**:
-   - PP ideal at 240°C
-   - Cooling time ≈20 seconds
+   - PP ideal at 230°C
+   - Cooling time ≈ 1 minute
+   - Mold pre-heating can help with plastic flow (400°C heat gun for 1 minute)
    - Mold release essential for demolding
 
-3. **Material Differences**:
+3. **Material Behavior**:
    - PP more forgiving than HDPE
-   - HDPE requires stronger mold walls and different temperature profile
+   - HDPE requires different temperature profile and gate/vent adjustment for better flow (in the future).
 
 4. **Manufacturing Insights**:
-   - 3D printed resin molds can withstand limited injection cycles
+   - 3D printed resin molds can withstand limited injection cycles and optimized paramters but detailed features will chip off with increased cycles
+   - Automatic desktop recycling of HDPE is a viable process for supplying pellets for injection molding
    - China manufacturing (JLC PCB) offered cost-effective solutions for metal parts
 
 ### Challenges and Solutions
@@ -130,31 +146,20 @@ Experimentation with:
 
 2. **Material Issues**:
    - HDPE didn't flow well
-   - Solution: Create dedicated HDPE mold with thicker walls
+   - Solution: Increased temperature, added vents, tried with another material PP
 
 3. **Dimensional Accuracy**:
    - Shrinkage variability
    - Solution: Systematic measurement and compensation (-0.4mm)
 
 ## Conclusion
-This research demonstrated that resin molds can be effective for small-scale recycled plastic injection molding when proper design rules are followed. The developed guidelines provide practical parameters for wall thickness, rib design, venting, and processing temperatures that enable successful molding with recycled PP. While challenges remain with materials like HDPE, the project established a foundation for further development of sustainable plastic recycling systems using accessible mold-making techniques.
+Overall, desktop injection molding with resin molds is difficult, especially when using manual machines that lack adjustable parameters like speed and pressure. However, Gaugey exhibits many of the key features required for injection molded parts, offering valuable insights into designing for resin-based injection molding.
+
+While the process is challenging, resin molds can be effective for small-scale injection molding using recycled plastic, provided design principles are adhered to. The guidelines developed offer practical recommendations for wall thickness, rib design, venting, and processing temperatures, enabling successful molding with recycled PP. Although working with materials like HDPE remains problematic, this project has laid the groundwork for further advancements in sustainable plastic recycling through accessible mold-making techniques.
+
 
 Future work should focus on:
-1. Expanding material compatibility (especially HDPE)
-2. Improving mold durability for longer production runs
-3. Developing standardized test pieces for community use
-4. Optimizing the shredder system integration
 
-## Appendix: Design Guidelines Summary
-
-| Feature            | Parameter               | Notes                          |
-|--------------------|-------------------------|--------------------------------|
-| Wall Thickness     | 1.2-3mm                | PP: 1.02-3.81mm               |
-| Draft Angles       | 1.5-2° minimum         | Up to 5° for textured surfaces |
-| Rib Design         | Height ≤2.5T, Base ≤0.66T | Prevent sink marks           |
-| Boss Design        | ≤60% wall thickness    | Proper radii at base          |
-| Corner Radii       | R2 = R1 + t            | Internal ≥50% wall thickness  |
-| Venting            | 0.05-0.1mm depth       | 4 primary + 2 secondary vents |
-| Gate Design        | Depth=50% wall thickness | Width=2x depth              |
-| Shrinkage          | Compensate -0.4mm      | Material dependent            |
-| Temperature        | PP: 240°C              | HDPE requires higher          |
+1.  Gaining a deeper understanding of the molding process to improve success rates.
+2.  Expanding material compatibility, particularly with HDPE.
+3.  Enhancing mold durability to support longer production runs.
